@@ -382,7 +382,7 @@ def editbuyer(): #แก้ไขข้อมูลผู้ซื้อ
 
 def Lists () : #แสดงตารางอัพเดตข้อมูลผู้ซื้อ
     print('-'*100)
-    print("ID             Name        Surname           ID Line            Username            Password")
+    print("ID             name        Surname           ID Line            Username            Password")
     print('-'*100)
     cursor.execute(' SELECT * FROM buyergoldb WHERE username = ? AND pass = ? ',(r_user1, r_pass1))
     row1 = cursor.fetchall()
